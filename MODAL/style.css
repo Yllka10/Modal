@@ -1,0 +1,81 @@
+body {
+    padding: 20px;
+}
+/* Stilizimi per modalin background pak qysh ka me u dok */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(65, 67, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease,visibility 0.3s ease;
+}
+/* Kur te klikojm */
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+/* qysh ka mu dok kur te hapet */
+.modal-content{
+    background: rgb(210, 34, 34);
+    padding: 10px;
+    border-radius: 8px;
+    width: 30em;
+    text-align: center;
+    position: relative;
+    color: white;
+    height: 13em;
+}
+/* Butoni x */
+.close{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+.close:hover{
+    background-color: red;
+    color: white;
+}
+/* Buttoni click here */
+.open-modal{
+    padding: 20px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.open-modal:hover{
+    background: rgb(21, 21, 209);
+}
+.close1{
+    
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background-color: red;
+        border-radius: 5px;
+        
+    
+}
+.close1:hover{
+    background-color: white;
+    color: red;
+}
